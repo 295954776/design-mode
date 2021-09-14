@@ -5,9 +5,14 @@ package com.example.designmode.simplefactory;
  * @DateTime: 2021/9/14 16:16
  * @Description: 具体产品类
  */
-public class ProdcutA extends Product {
+public class ProdcutA implements Product {
+
+    public ProdcutA() {
+        System.out.println("创建ProductA");
+    }
+
     @Override
-    public void methoudDiff() {
-        System.out.println("productA实现业务方法");
+    public void display() {
+        System.out.println("显示ProductA");
     }
 }
